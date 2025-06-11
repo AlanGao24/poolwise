@@ -5,7 +5,8 @@ import Link from "next/link";
 export default function HeroSection(){
     return(
         <section
-        className="h-screen bg-cover bg-center flex items-center justify-center text-white" 
+        // className="h-screen bg-cover bg-center flex items-center justify-center text-white" 
+        className="fixed inset-0 h-screen bg-cover bg-center flex items-center justify-center text-white"
         style={{ backgroundImage: "url('/Hero.webp')" }}>
             <div className="text-left px-4">
                 <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
