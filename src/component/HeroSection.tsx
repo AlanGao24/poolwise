@@ -5,21 +5,21 @@ import Link from "next/link";
 export default function HeroSection(){
     return(
         <section
-        // className="h-screen bg-cover bg-center flex items-center justify-center text-white" 
-        // className="fixed inset-0 h-screen bg-cover bg-center flex items-center justify-center text-white"
-        className="top-0 h-screen bg-cover bg-center bg-fixed flex items-center justify-center text-white"
+        // className="flex items-center justify-center h-screen text-white bg-center bg-cover" 
+        // className="fixed inset-0 flex items-center justify-center h-screen text-white bg-center bg-cover"
+        className="top-0 flex items-center justify-center h-screen text-white bg-fixed bg-center bg-cover"
         style={{ backgroundImage: "url('/waterBackground.png')" }}>
-            <div className="text-center px-4">
-                <h1 className="text-4xl md:text-8xl font-bold drop-shadow-lg">
+            <div className="px-4 text-center">
+                <h1 className="text-4xl font-bold md:text-8xl drop-shadow-lg">
                     Poolwise
                 </h1>
                 <p className="mt-4 text-lg md:text-3xl drop-shadow-sm">
                     Professional swimming pool maintenance solutions
                 </p>
-                <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center">
+                <div className="flex flex-col justify-center gap-4 mt-6 md:flex-row">
                     <Link
                     href="/contact"
-                    className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition">
+                    className="px-6 py-3 font-semibold text-black transition bg-yellow-400 rounded-full shadow hover:bg-yellow-300">
                         Booking Now
                     </Link>
                 </div>

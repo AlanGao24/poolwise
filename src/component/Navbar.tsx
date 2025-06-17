@@ -8,8 +8,8 @@ import { useState } from "react";
 export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false)
     return(
-        <nav className="bg-white shadow-lg sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+        <nav className="sticky top-0 z-50 bg-white shadow-lg">
+            <div className="flex items-center justify-between px-6 py-2 mx-auto max-w-7xl">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image
                         src="/Poolwise-Living-logo.png"
@@ -21,7 +21,7 @@ export default function Navbar(){
                 </Link>
 
                 {/* On computer */}
-                <div className="space-x-10 text-gray-700 font-medium text-lg hidden md:flex">
+                <div className="hidden space-x-10 text-lg font-medium text-gray-700 md:flex">
                     <Link href="/product">Product</Link>
                     <Link href="/services">Services</Link>
                     <Link href="/why-us">Why Us</Link>
@@ -31,7 +31,7 @@ export default function Navbar(){
 
                 {/* On mobile phone */}
                 <button
-                    className="md:hidden text-gray-700"
+                    className="text-gray-700 md:hidden"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
                 >
@@ -42,7 +42,7 @@ export default function Navbar(){
 
             {/* Menu content */}
             {isOpen && (
-            <div className="md:hidden px-6 pb-4 space-y-2 text-gray-700 font-medium flex flex-col">
+            <div className="flex flex-col px-6 pb-4 space-y-2 font-medium text-gray-700 md:hidden">
                 <Link href="/product" className="block" onClick={() => setIsOpen(false)}>Product</Link>
                 <Link href="/services" className="block" onClick={() => setIsOpen(false)}>Services</Link>
                 <Link href="/why-us" className="block" onClick={() => setIsOpen(false)}>Why Us</Link>
