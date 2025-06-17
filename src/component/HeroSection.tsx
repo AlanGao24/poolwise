@@ -7,13 +7,13 @@ export default function HeroSection(){
         <section
         // className="h-screen bg-cover bg-center flex items-center justify-center text-white" 
         // className="fixed inset-0 h-screen bg-cover bg-center flex items-center justify-center text-white"
-        className="sticky top-0 h-screen bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/Hero.webp')" }}>
-            <div className="text-left px-4">
-                <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
+        className="top-0 h-screen bg-cover bg-center bg-fixed flex items-center justify-center text-white"
+        style={{ backgroundImage: "url('/waterBackground.png')" }}>
+            <div className="text-center px-4">
+                <h1 className="text-4xl md:text-8xl font-bold drop-shadow-lg">
                     Poolwise
                 </h1>
-                <p className="mt-4 text-lg md:text-2xl drop-shadow-sm">
+                <p className="mt-4 text-lg md:text-3xl drop-shadow-sm">
                     Professional swimming pool maintenance solutions
                 </p>
                 <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center">
